@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Arquivo Layout</string>
+    <string name="title">Enter Title</string>
+    <string name="done">Done:</string>
+    <string name="status">Status</string>
+    <string name="not_done">Not Done</string>
+    <string name="priorit">Priorit:</string>
+    <string name="low">Low</string>
+    <string name="uilabs">UILabs</string>
+    <string name="nada">nada</string>
+    <string name="layout2">Modern Art UI</string>
+    <string name="categories">Categories</string>
+</resources>

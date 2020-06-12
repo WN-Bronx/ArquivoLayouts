@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_layout_5">
+
+    <TextView
+        android:id="@+id/tView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="14dp"
+        android:text="Time"
+        android:textColor="#514F4F"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tViewMy" />
+
+    <TextView
+        android:id="@+id/tViewHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="1:07 AM"
+        android:textColor="#555353"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tView"
+        app:layout_constraintTop_toBottomOf="@+id/tViewMy" />
+
+    <TextView
+        android:id="@+id/tViewFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="20dp"
+        android:text="First Name"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tView" />
+
+    <EditText
+        android:id="@+id/edTextTName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/tViewFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/tViewHora" />
+
+    <TextView
+        android:id="@+id/tViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="30dp"
+        android:text="Last Name"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tViewFirstName" />
+
+    <EditText
+        android:id="@+id/eTextLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/tViewName"
+        app:layout_constraintTop_toBottomOf="@+id/edTextTName" />
+
+    <ImageView
+        android:id="@+id/iViewEstrela_1"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/iViewEstrela_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTextLast"
+        app:srcCompat="@android:drawable/star_off" />
+
+    <ImageView
+        android:id="@+id/iViewEstrela_2"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/iViewEstrela_3"
+        app:layout_constraintStart_toEndOf="@+id/iViewEstrela_1"
+        app:layout_constraintTop_toBottomOf="@+id/eTextLast"
+        app:srcCompat="@android:drawable/star_off" />
+
+    <ImageView
+        android:id="@+id/iViewEstrela_3"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/iViewEstrela_4"
+        app:layout_constraintStart_toEndOf="@+id/iViewEstrela_2"
+        app:layout_constraintTop_toBottomOf="@+id/eTextLast"
+        app:srcCompat="@android:drawable/star_off" />
+
+    <ImageView
+        android:id="@+id/iViewEstrela_4"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/iViewEstrela_5"
+        app:layout_constraintStart_toEndOf="@+id/iViewEstrela_3"
+        app:layout_constraintTop_toBottomOf="@+id/eTextLast"
+        app:srcCompat="@android:drawable/star_off" />
+
+    <ImageView
+        android:id="@+id/iViewEstrela_5"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iViewEstrela_4"
+        app:layout_constraintTop_toBottomOf="@+id/eTextLast"
+        app:srcCompat="@android:drawable/star_off" />
+
+    <Button
+        android:id="@+id/bttSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        android:text="SUBIMIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iViewEstrela_3" />
+
+    <TextView
+        android:id="@+id/tViewMy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2222EF"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="My Application"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
